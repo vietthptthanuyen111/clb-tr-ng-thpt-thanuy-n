@@ -1,0 +1,40 @@
+/* Global style */
+:root {
+--bg: #f7f9fc;
+--card: #ffffff;
+--accent: #0b63d6;
+--muted: #6b7280;
+}
+body {
+font-family: Inter, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+margin: 0;
+background: var(--bg);
+color: #111;
+}
+header {
+background: linear-gradient(90deg, #0b63d6 0%, #1865c8 100%);
+padding: 28px 20px;
+color: #fff;
+}
+.container { max-width: 1000px; margin: 0 auto; padding: 24px; }
+h1 { margin: 0; font-size: 28px; }
+p.lead { margin: 8px 0 0; color: rgba(255,255,255,0.9); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 16px; }
+.card {
+background: var(--card);
+border-radius: 12px;
+padding: 18px;
+box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+.card h3 { margin: 0 0 8px; }
+.card p { margin: 0 0 12px; color: var(--muted); }
+.btn {
+display: inline-block;
+padding: 8px 12px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 600;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-outline { border: 1px solid #e5e7eb; color: #111; background: transparent; }
+footer { padding: 18px; text-align: center; color: var(--muted); font-size: 14px; }
